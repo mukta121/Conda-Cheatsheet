@@ -1,0 +1,70 @@
+#####Save the particular environment with their packages in .yml file or .txt to send to other user.
+conda list --export > conda_list.txt
+or
+conda env export > environment.yml
+or 
+conda-env export -n py36 > all_packages.yml
+########################################################################################
+##########install with package with  environment with .yml file ###############################
+ conda env create -f environment.yml
+ or 
+ conda config --set ssl_verify no
+ conda env create -f environment.yml
+ 
+ 
+ conda install -c conda-forge backports.lzma
+
+####################################################################################################
+
+
+
+
+
+conda env remove -n ENV_NAME
+conda info --envs
+Create the environment from the environment.yml file:
+
+
+##############################################################################################
+If your environments are not showing up, make sure you have installed
+nb_conda_kernels in the environment with Jupyter
+ipykernel in the Python environment you want to access
+
+conda install -n env_name nb_conda_kernels
+or conda install -n python_env ipykernel
+
+################################################################################################
+conda create --name myclone --clone myenv
+NOTE: Replace myclone with the name of the new environment. 
+Replace myenv with the name of the existing environment that you want to
+ copy.
+ 
+ conda create --name myenv --file spec-file.txt
+ conda install --name myenv --file spec-file.txt
+ 
+ 
+ conda install python=3.7
+ 
+
+
+ 
+ ##Removing an environment
+ conda remove --name myenv --all
+ 
+####install package  
+pip install selenium
+ or if some SSL issues comes:
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org selenium
+
+
+Bad Debt
+
+conda install pandas
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pyxlsb
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org xlrd
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org xgboost
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org scikit-learn==0.22
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org openpyxl
+
+
+cd workspace\DEBT\USA_Debt\NAZ\USA_BAD_DEBT
