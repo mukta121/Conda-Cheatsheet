@@ -60,6 +60,7 @@ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org seleni
 Bad Debt
 
 conda install pandas
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org selenium
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pyxlsb
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org xlrd
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org xgboost
